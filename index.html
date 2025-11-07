@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<script>
+        var test = false; // False if contracts are on Mainnet
+        var contractAddressSale = '0xE6EC6f9383f5AFfefbEDB8Ec73bB0aB385A405A3';
+        var contractAddressToken = '0x3645Faf5d10422d5508Cf37771F6e47fEfA4c6A3';
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chain Summit - AI & Blockchain Conference</title>
@@ -128,6 +135,27 @@
 
     <!-- About Section -->
     <section id="about" class="section">
+
+
+
+<p id="result"></p>
+    
+ <p hidden><input type="number" id="buyAmount" value="0.0005" min="0.0005"> <font  color="#00009C">BNB</font></p>
+ <p hidden><font  color="#00009C">You get:</font> <span id="get"><font  color="#00009C">0</font></span> <span class="tokenSymbol"><font  color="#00009C">AIR</font></span></p>
+ <button  class="buton" id="buyBtn" >Claim AIR COIN</button>
+ 
+   <br><br>
+    <div style="text-align: center">
+   <button class="buton" id="connect">Connect</button>
+ <span id="nometamask" class="err" style="display: none">Please install Metamask first...</span>
+ <div class="network small" hidden><span id="curnet"><span class="err">Please use DApp browser/extension (e.g. <a target="_blank" href="https://metamask.io">Metamask</a>)</span></span> <span id="myAddr"></span>
+ <span id="referred" style="display:none"><br>Referrer: <span id="referrer"></span></span></div>
+   </div>	
+  </div>
+
+
+
+        
         <h2 class="animate-on-scroll">About Chain Summit</h2>
         <div class="about-content">
             <div class="about-text animate-on-scroll slide-left">
@@ -262,6 +290,13 @@
         </div>
     </footer>
 
+
+    <script src='https://dappbuilder.org/js/jquery-3.6.0.min.js' type="text/javascript" charset="utf-8"></script>
+<script src='https://dappbuilder.org/js/ethers-5.0.umd.min.js' type="text/javascript" charset="utf-8"></script>
+<script src='https://dappbuilder.org/bsc/tokensaletimerefadm/js/tokensale.ui.js' type="text/javascript" charset="utf-8"></script>
+
+
 <script src="templatemo-chain-scripts.js"></script>
 </body>
+
 </html>
