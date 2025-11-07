@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chain Summit - AI & Blockchain Conference</title>
+    <link rel="stylesheet" href="templatemo-chain-summit.css">
+
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <div class="neural-network" id="neuralNetwork"></div>
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#home" class="logo">
+                <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Hexagon background -->
+                    <polygon points="50,5 85,25 85,65 50,85 15,65 15,25" 
+                             fill="none" 
+                             stroke="url(#gradientStroke)" 
+                             stroke-width="2"/>
+                    
+                    <!-- Neural network nodes -->
+                    <circle cx="50" cy="30" r="4" fill="#00ffff"/>
+                    <circle cx="35" cy="45" r="4" fill="#ff00ff"/>
+                    <circle cx="65" cy="45" r="4" fill="#ff00ff"/>
+                    <circle cx="35" cy="65" r="4" fill="#00ffff"/>
+                    <circle cx="65" cy="65" r="4" fill="#00ffff"/>
+                    <circle cx="50" cy="55" r="5" fill="#7c3aed"/>
+                    
+                    <!-- Connection lines -->
+                    <line x1="50" y1="30" x2="35" y2="45" stroke="#00ffff" stroke-width="1" opacity="0.5"/>
+                    <line x1="50" y1="30" x2="65" y2="45" stroke="#00ffff" stroke-width="1" opacity="0.5"/>
+                    <line x1="35" y1="45" x2="50" y2="55" stroke="#ff00ff" stroke-width="1" opacity="0.5"/>
+                    <line x1="65" y1="45" x2="50" y2="55" stroke="#ff00ff" stroke-width="1" opacity="0.5"/>
+                    <line x1="50" y1="55" x2="35" y2="65" stroke="#7c3aed" stroke-width="1" opacity="0.5"/>
+                    <line x1="50" y1="55" x2="65" y2="65" stroke="#7c3aed" stroke-width="1" opacity="0.5"/>
+                    
+                    <!-- Gradient definitions -->
+                    <defs>
+                        <linearGradient id="gradientStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#ff00ff;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">Chain Summit</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#about" onclick="closeMenu()">About</a>
+            <a href="#speakers" onclick="closeMenu()">Speakers</a>
+            <a href="#schedule" onclick="closeMenu()">Schedule</a>
+            <a href="#sponsors" onclick="closeMenu()">Sponsors</a>
+            <a href="#register" onclick="closeMenu()">Register</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Chain Summit</h1>
+            <p>Where Artificial Intelligence Meets Blockchain Innovation</p>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="500">0</span>
+                    <span class="stat-label">Attendees</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="50">0</span>
+                    <span class="stat-label">Speakers</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="3">0</span>
+                    <span class="stat-label">Days</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="25">0</span>
+                    <span class="stat-label">Sponsors</span>
+                </div>
+            </div>
+
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="#about" class="btn btn-primary">Learn More</a>
+                <a href="#schedule" class="btn btn-secondary">View Schedule</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="animate-on-scroll">About Chain Summit</h2>
+        <div class="about-content">
+            <div class="about-text animate-on-scroll slide-left">
+                <p>Join the world's leading experts in AI and blockchain technology for three days of cutting-edge presentations, hands-on workshops, and networking opportunities that will shape the future of technology.</p>
+                
+                <p>Discover the latest breakthroughs in neural networks, machine learning, decentralized systems, and smart contracts. Connect with innovators who are transforming industries and creating tomorrow's solutions.</p>
+                
+                <p>From ambitious startups to Fortune 500 companies, Chain Summit brings together the brightest minds to explore the revolutionary intersection of artificial intelligence and blockchain technology.</p>
+                <p>Take control of your time with <a href="https://timermo.com" rel="nofollow" target="_blank">TimerMo</a> today. Bring your designs to life with <a href="https://www.vectorsticker.com" rel="nofollow" target="_blank">VectorSticker</a> resources.</p>
+            </div>
+            <div class="about-visual animate-on-scroll slide-right">
+                <div class="blockchain-visual">
+                    <div class="block">AI</div>
+                    <div class="block">ML</div>
+                    <div class="block">DL</div>
+                    <div class="block">BC</div>
+                    <div class="block">SC</div>
+                    <div class="block">DA</div>
+                    <div class="block">IoT</div>
+                    <div class="block">5G</div>
+                    <div class="block">QC</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="about-stats animate-on-scroll scale-up">
+            <div class="about-stat">
+                <span class="about-stat-number">50+</span>
+                <span class="about-stat-label">Industry Leaders</span>
+            </div>
+            <div class="about-stat">
+                <span class="about-stat-number">500+</span>
+                <span class="about-stat-label">Attendees Expected</span>
+            </div>
+            <div class="about-stat">
+                <span class="about-stat-number">25+</span>
+                <span class="about-stat-label">Tech Companies</span>
+            </div>
+            <div class="about-stat">
+                <span class="about-stat-number">3</span>
+                <span class="about-stat-label">Days of Innovation</span>
+            </div>
+        </div>
+
+        <!-- Hexagonal decorations -->
+        <div class="hex-decoration" style="top: 10%; left: 5%;"></div>
+        <div class="hex-decoration" style="top: 70%; right: 10%; animation-delay: 2s;"></div>
+        <div class="hex-decoration" style="top: 40%; right: 5%; animation-delay: 4s;"></div>
+    </section>
+
+    
+    
+
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="section">
+        <h2 class="animate-on-scroll">Our Sponsors</h2>
+        <div class="sponsors-section animate-on-scroll">
+            <div class="sponsor-tiers">
+                <!-- Platinum Sponsors -->
+                <div class="sponsor-tier">
+                    <h3 class="tier-title platinum">Platinum Partners</h3>
+                    <div class="sponsors-grid platinum">
+                        <div class="sponsor-card platinum animate-on-scroll scale-up stagger-animation" style="--stagger: 1;">
+                            <div class="sponsor-logo">TC</div>
+                            <h4 class="sponsor-name">TechCorp Global</h4>
+                            <p class="sponsor-description">Leading AI infrastructure and enterprise solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gold Sponsors -->
+                <div class="sponsor-tier">
+                    <h3 class="tier-title gold">Gold Partners</h3>
+                    <div class="sponsors-grid gold">
+                        <div class="sponsor-card gold animate-on-scroll scale-up stagger-animation" style="--stagger: 2;">
+                            <div class="sponsor-logo">CL</div>
+                            <h4 class="sponsor-name">CryptoLabs</h4>
+                            <p class="sponsor-description">Blockchain development and DeFi solutions</p>
+                        </div>
+                        <div class="sponsor-card gold animate-on-scroll scale-up stagger-animation" style="--stagger: 3;">
+                            <div class="sponsor-logo">DM</div>
+                            <h4 class="sponsor-name">DataMind</h4>
+                            <p class="sponsor-description">Machine learning and data analytics platform</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Silver Sponsors -->
+                <div class="sponsor-tier">
+                    <h3 class="tier-title silver">Silver Partners</h3>
+                    <div class="sponsors-grid silver">
+                        <div class="sponsor-card silver animate-on-scroll scale-up stagger-animation" style="--stagger: 4;">
+                            <div class="sponsor-logo">FC</div>
+                            <h4 class="sponsor-name">FutureCorp</h4>
+                            <p class="sponsor-description">Digital transformation services</p>
+                        </div>
+                        <div class="sponsor-card silver animate-on-scroll scale-up stagger-animation" style="--stagger: 5;">
+                            <div class="sponsor-logo">AI</div>
+                            <h4 class="sponsor-name">AI Ventures</h4>
+                            <p class="sponsor-description">Investment and startup incubation</p>
+                        </div>
+                        <div class="sponsor-card silver animate-on-scroll scale-up stagger-animation" style="--stagger: 6;">
+                            <div class="sponsor-logo">BC</div>
+                            <h4 class="sponsor-name">BlockChain Pro</h4>
+                            <p class="sponsor-description">Blockchain consulting and development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h2>Chain Summit</h2>
+            <p>November 14-16, 2026 • Bangkok Convention Center</p>
+            <!-- set the event date in the JavaScript file / line number 32 -->
+            <div class="social-links">
+                <a href="#" class="social-link" rel="nofollow noopener" target="_blank">T</a>
+                <a href="#" class="social-link">L</a>
+                <a href="#" class="social-link">F</a>
+                <a href="#" class="social-link">I</a>
+            </div>
+
+            <p>
+                © 2026 Chain Summit Conference. All rights reserved. 
+                | Designed by <a href="" rel="nofollow noopener" target="">TemplateMo</a>
+            </p>
+        </div>
+    </footer>
+
+<script src="templatemo-chain-scripts.js"></script>
+</body>
+</html>
