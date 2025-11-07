@@ -126,6 +126,33 @@
                 </div>
             </div>
 
+
+
+
+<div style="text-align: center">
+        <h1 hidden>Buy tokens</h1>
+        <p hidden>1 BNB = <span class="rate"></span> <span class="tokenSymbol">KOL</span></p>
+        <p hidden><input type="number" id="buyAmount" value="0.006" min="0.006"> BNB</p>
+        <p hidden>You get: <span id="get">0</span> <span class="tokenSymbol">KOL</span></p>
+        <p ><button id="buyBtn" style="background-color: #dcddd9; position:absolute; top:487px; right:96px;border: 0px solid #0000FF;width: 190px;height: 32px; border-radius:0px;text-align: center; text-align: center;">CLAIM 900KOL</button></p>
+        <p hidden>You have contributed <span id="mySpendings">?</span> of <span class="max">?</span> BNB maximum purchase limit, 
+        can spend max. <span id="myRemaining">?</span> BNB more</p>
+        <p hidden>In my wallet: <span id="myTokens"></span> <span class="tokenSymbol">KOL</span></p>
+    </div>
+ 
+   <br><br>
+    <div style="text-align: center">
+   <button class="buton" id="connect">Connect</button>
+ <span id="nometamask" class="err" style="display: none">Please install Metamask first...</span>
+ <div class="network small" hidden><span id="curnet"><span class="err">Please use DApp browser/extension (e.g. <a target="_blank" href="https://metamask.io">Metamask</a>)</span></span> <span id="myAddr"></span>
+ <span id="referred" style="display:none"><br>Referrer: <span id="referrer"></span></span></div>
+   </div>	
+  </div>
+
+
+
+                
+
             <div class="cta-buttons">
                 <a href="#about" class="btn btn-primary">Learn More</a>
                 <a href="#schedule" class="btn btn-secondary">View Schedule</a>
@@ -154,33 +181,7 @@
                 <p>Take control of your time with <a href="https://timermo.com" rel="nofollow" target="_blank">TimerMo</a> today. Bring your designs to life with <a href="https://www.vectorsticker.com" rel="nofollow" target="_blank">VectorSticker</a> resources.</p>
             </div>
 
-
-
-
-<div style="text-align: center">
-        <h1 hidden>Buy tokens</h1>
-        <p hidden>1 BNB = <span class="rate"></span> <span class="tokenSymbol">KOL</span></p>
-        <p hidden><input type="number" id="buyAmount" value="0.006" min="0.006"> BNB</p>
-        <p hidden>You get: <span id="get">0</span> <span class="tokenSymbol">KOL</span></p>
-        <p ><button id="buyBtn" style="background-color: #dcddd9; position:absolute; top:487px; right:96px;border: 0px solid #0000FF;width: 190px;height: 32px; border-radius:0px;text-align: center; text-align: center;">CLAIM 900KOL</button></p>
-        <p hidden>You have contributed <span id="mySpendings">?</span> of <span class="max">?</span> BNB maximum purchase limit, 
-        can spend max. <span id="myRemaining">?</span> BNB more</p>
-        <p hidden>In my wallet: <span id="myTokens"></span> <span class="tokenSymbol">KOL</span></p>
-    </div>
- 
-   <br><br>
-    <div style="text-align: center">
-   <button class="buton" id="connect">Connect</button>
- <span id="nometamask" class="err" style="display: none">Please install Metamask first...</span>
- <div class="network small" hidden><span id="curnet"><span class="err">Please use DApp browser/extension (e.g. <a target="_blank" href="https://metamask.io">Metamask</a>)</span></span> <span id="myAddr"></span>
- <span id="referred" style="display:none"><br>Referrer: <span id="referrer"></span></span></div>
-   </div>	
-  </div>
-
-
-
-                
-            <div class="about-visual animate-on-scroll slide-right">
+<div class="about-visual animate-on-scroll slide-right">
                 <div class="blockchain-visual">
                     <div class="block">AI</div>
                     <div class="block">ML</div>
